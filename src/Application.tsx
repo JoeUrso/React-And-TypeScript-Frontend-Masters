@@ -1,3 +1,4 @@
+import TypingChildren from "./TypingChildren";
 import { string } from "prop-types";
 
 type NameTagProps = {
@@ -6,6 +7,7 @@ type NameTagProps = {
 };
 
 const NameTag = ({ name, greeting }: NameTagProps) => {
+
   return (
     <main>
       <header>
@@ -14,6 +16,9 @@ const NameTag = ({ name, greeting }: NameTagProps) => {
       </header>
       <section className="display-name">
         <p>{name}</p>
+      </section>
+      <section>
+        <TypingChildren />
       </section>
       <footer />
     </main>
