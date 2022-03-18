@@ -1,3 +1,5 @@
+import TypingChildren from "./TypingChildren";
+
 const NameTag = () => {
   return (
     <main>
@@ -7,6 +9,9 @@ const NameTag = () => {
       </header>
       <section className="display-name">
         <p>[Your Name Here]</p>
+      </section>
+      <section>
+        <TypingChildren />
       </section>
       <footer />
     </main>
