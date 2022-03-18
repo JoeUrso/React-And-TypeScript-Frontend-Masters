@@ -2,23 +2,24 @@ import { string } from "prop-types";
 
 type NameTagProps = {
   name: string;
+  greeting?: string;
 };
 
-const NameTag = ({ name }: NameTagProps) => {
+const NameTag = ({ name, greeting }: NameTagProps) => {
   return (
     <main>
       <header>
-        <h1>Hello</h1>
+        <h1>{greeting}</h1>
         <p>My Name Is</p>
       </header>
       <section className="display-name">
-        <p>[Your Name Here]</p>
+        <p>{name}</p>
       </section>
       <footer />
     </main>
   );
 };
 
-const Application = () => <NameTag name={"Joe"} />;
+const Application = () => <NameTag name={"Joe"} greeting="Yo" />;
 
 export default Application;
